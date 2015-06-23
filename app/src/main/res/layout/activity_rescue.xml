@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_button_name"
+        android:id="@+id/actionButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weather Forecast"
+        android:id="@+id/weatherForecastLabel"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/actionButton"
+        android:layout_alignLeft="@+id/actionButton"
+        android:layout_alignStart="@+id/actionButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Temperature:"
+        android:id="@+id/textView"
+        android:layout_below="@+id/weatherForecastLabel"
+        android:layout_alignLeft="@+id/weatherForecastLabel"
+        android:layout_alignStart="@+id/weatherForecastLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Snowfall:"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/temperatureText"
+        android:layout_above="@+id/snowFallText"
+        android:layout_alignRight="@+id/weatherForecastLabel"
+        android:layout_alignEnd="@+id/weatherForecastLabel"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/snowFallText"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignRight="@+id/temperatureText"
+        android:layout_alignEnd="@+id/temperatureText"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your actions"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/yourActionsText"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:lines="6"
+        android:layout_alignRight="@+id/snowFallText"
+        android:layout_alignEnd="@+id/snowFallText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/pressAlertText"
+        android:layout_below="@+id/yourActionsText"
+        android:layout_alignLeft="@+id/yourActionsText"
+        android:layout_alignStart="@+id/yourActionsText"
+        android:textColor="#ffff7848" />
+
+</RelativeLayout>
