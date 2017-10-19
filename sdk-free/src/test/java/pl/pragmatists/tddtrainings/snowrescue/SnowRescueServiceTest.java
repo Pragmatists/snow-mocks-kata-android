@@ -1,12 +1,12 @@
 package pl.pragmatists.tddtrainings.snowrescue;
 
-import static org.mockito.Mockito.*;
-
 import org.junit.Test;
 
 import pl.pragmatists.tddtrainings.snowrescue.dependencies.MunicipalServices;
 import pl.pragmatists.tddtrainings.snowrescue.dependencies.PressService;
 import pl.pragmatists.tddtrainings.snowrescue.dependencies.WeatherForecastService;
+
+import static org.mockito.Mockito.mock;
 
 public class SnowRescueServiceTest {
 
